@@ -1,4 +1,4 @@
-  .formas-konteiners{
+   .formas-konteiners{
       background-color: grey;
       display: flex;
       align-items: center;
@@ -56,4 +56,3 @@
     border-bottom: 2px solid black;
     font-size: 24px;
 }
-
