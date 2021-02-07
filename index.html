@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Majasdarbs algas aprēķinam </title>
-    <link rel="stylesheet" href="../stils.css">
+    <link rel="stylesheet" href="../majasdarbs080221/stils.css">
 <script>
+       /*
+        
     function calculate(){
         var ievade = document.getElementById("Salary").value;
         var procents = 0.2;
@@ -18,6 +20,23 @@
         console.log(nodokli);
         var result = parseInt(ievade) - (nodokli);
         console.log(result);
+      
+    }
+    */
+    function manaFunkcija() {
+        
+        var ievade = document.getElementById("Salary").value;
+        var procents = 0.2;
+        var minimums = parseInt(ievade) * 0.105;
+        var aprekinaSumma = parseInt(ievade) - minimums;
+        console.log(aprekinaSumma);
+        var aprekinaNodokli = aprekinaSumma * procents;
+        console.log(aprekinaNodokli);
+        var nodokli = minimums + aprekinaNodokli;
+        console.log(nodokli);
+        var result = parseInt(ievade) - (nodokli);
+        console.log(result);
+        document.getElementById("ķepis").innerHTML = result;
     }
 </script>
 </head>
@@ -28,11 +47,11 @@
     <form name="formas-pamats">
        <p class="teksts1">Alga uz papīra</p>
        <input type ="text" id="Salary" placeholder="Ievadi savu algu" /> <br><br>
-       <input type="button" id="click" value="Aprēķināt" onclick="calculate()" />
+       <input type="button" id="click" value="Aprēķināt" onclick="manaFunkcija()" />
        <input type="reset" id="notirit" value="Notīrīt" /><br />
     </form>
     <p class= "teksts2"> Alga uz rokas: </p>
-    <p class="ķepis"></p>
+    <p id="ķepis"></p>
         </div>
          </div>
         
