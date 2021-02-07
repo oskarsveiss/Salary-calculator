@@ -1,0 +1,57 @@
+  .formas-konteiners{
+      background-color: grey;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 800px;
+  }
+  .forma{
+    
+    width: 40%;
+    background-color: white;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+  }
+  .formainside{
+
+ 
+  }
+ .teksts1{
+     font-size: 26px;
+     color: black;
+     font-style: italic;
+ }
+ .teksts2{
+    font-size: 26px;
+    color: black;
+    font-style: italic;
+}
+
+#click{
+    background-color: purple;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    height: 40px;
+
+    
+}
+#notirit{
+    background-color: purple;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    height: 40px;
+    
+}
+#Salary{
+    height: 30px;
+    border-style: none;
+    border-bottom: 2px solid black;
+}
+.ķepis{
+    border-bottom: 2px solid black;
+}
